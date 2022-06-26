@@ -1,0 +1,6 @@
+type submissions{
+    id: ID!,
+    challenge: ID!,
+    submitted: Boolean!,
+    user: ID!
+}

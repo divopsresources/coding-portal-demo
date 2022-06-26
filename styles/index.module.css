@@ -1,0 +1,274 @@
+.mainContent {
+    padding: 1rem 5rem 0 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .leftContent {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .joinText {
+        display: none !important;
+    }
+}
+
+.leftContent {
+    position: relative;
+    display: block;
+    flex-direction: column;
+
+    width: 40%;
+    max-width: 458px;
+    min-width: 458px;
+
+}
+
+.scroll {
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-left: 2px;
+    margin-right: 10px;
+    margin-left: 16px;
+
+    scrollbar-color: rgba(255, 0, 0, 0) rgba(255, 0, 0, 0);
+    scrollbar-width: thin;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+    width: 10px;
+    max-height: 10px;
+}
+ 
+.scroll::-webkit-scrollbar-track {
+    margin-top: 20px;
+}
+ 
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #595273;
+    border-radius: 20px;
+    
+}
+
+.scroll::-webkit-scrollbar-corner{
+    background-color: #342e49;
+}
+
+.rightContent {
+    width: 100%;
+    display: flex;
+    gap: 1.4rem;
+    max-width: 700px;
+    flex-direction: column;
+    position: relative;
+}
+
+.clientRenderer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.leftHeaderContainer {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #3d3756;
+    color: white;
+    border-radius: 1.3rem;
+    height: 40px;
+}
+
+.leftHeaderItem {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 0.6rem;
+}
+
+.codePreviews {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100vh;
+    padding-bottom: 200px;
+}
+
+.bottomFade {
+    content  : "";
+    position : absolute;
+    z-index  : 1;
+    top   : 2.5rem;
+    left     : 0;
+    pointer-events   : none;
+    background-image : linear-gradient(to top, 
+                      rgba(61,55,86, 0), 
+                      rgba(41,37,55, 1) 90%);
+    width    : 100%;
+    height   : 2em;
+  }
+
+.rightHeader {
+    height: 2.8rem;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.rightHeaderText {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.rightHeaderButton {
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 1.1rem;
+    border: 2px solid white;
+    color: white;
+    border-radius: 1.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 1rem;
+}
+
+.rightHeaderButton:hover {
+    transition: all 0.3s ease-out;
+    background-color: white;
+    color: black
+}
+
+.challenges {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.iChallenge {
+    
+    align-self: center;
+    min-height: 18rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.iChallenge:focus {
+    outline: none;
+}
+
+.myChallenge {
+    background-color: #3d3756;
+    border-radius: 20px;
+}
+
+.upcomingChallenge {
+    background-color: #262333;
+    min-height: 15rem !important;
+    border-radius: 1.6rem;
+    border: 2px solid white;
+}
+
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.4rem;
+    width: 100%;
+}
+
+.languageIcon {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.dateContainer {
+    display: flex;
+    color: white;
+    gap: 0.3rem;
+}
+
+.colouredDate {
+    background-color: #342e49;
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    border-radius: 1.6rem;
+}
+
+.cardBody {
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.publisher {
+    display: flex;
+    align-items: center;
+    background-color: #342e49;
+    width: fit-content;
+    gap: 0.3rem;
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    border-radius: 1.6rem;
+    font-size: 1rem;
+}
+
+.iProfilePic {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.horizontalProfileContainer {
+    display: flex;
+    gap: 0.7rem;
+    overflow-x: hidden;
+}
+
+.challengeTitle {
+    margin-top: 0.5rem;
+}
+
+.upcomingTitle {
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
+}
+
+.upcomingWidgets {
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+}
+
+.addWidget {
+    border-radius: 50%;
+    border: none;
+    background-color: #342e49;
+    color: white;
+}
+
+.inlineLanguageIcon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.challengeMiniBack {
+    font-size: 2rem;
+}
+
+.spacedHeader {
+    justify-content: unset !important;
+    gap: 1.5rem;
+}

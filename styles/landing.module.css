@@ -1,0 +1,184 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14rem;
+    padding-top: 19rem;
+    color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.firstContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 70rem;
+}
+
+.childContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    width: 20rem;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+    padding: 3rem;
+}
+
+
+.topContent {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.8rem;
+}
+
+.titleText {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    width: 19rem;
+    margin-right: 3rem;
+}
+
+.smallDot {
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.dotContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 5rem;
+    padding-right: 0.8rem;
+}
+
+.signInButton {
+    transition: all 0.3s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.6rem;
+    padding: 0.9rem;
+    width: 8.2rem;
+    height: 2.5rem;
+}
+
+.signInButton:hover {
+    transition: all 0.3s ease-out;
+    background-color: white;
+    color: black
+}
+
+.smallGoogle {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.signInText {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+.questionButton {
+    transition: all 0.3s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+.questionButton:hover {
+    transition: all 0.3s ease-out;
+    color: black;
+    background-color: white;
+}
+
+.questionText {
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .firstContainer {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .container {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1066px) {
+    .topContent {
+        flex-direction: column;
+    }
+    .dotContainer {
+        flex-direction: row;
+        align-items: center;
+        width: 5rem;
+    }
+    .childContainer {
+        min-width: 24rem;
+    }
+
+    .titleText {
+        text-align: center;
+    }
+
+    .titleContainer {
+        margin: 0;
+    }
+
+    .dotContainer {
+        padding: 0;
+    }
+
+    .bottomContent {
+        width: 100%;
+    }
+
+    .container {
+        padding: 0;
+        padding-top: 8rem;
+    }
+
+    .firstContainer {
+        width: 30rem;
+    }
+}

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat';
+  height: 100%;
+}
+
+.slick-list {
+
+  overflow: hidden;
+  position: relative;
+  margin: 0 -20px;
+}
+
+.slick-slide>div {
+  display: inline-block;
+  width: 300px;
+  height: 100%;
+  padding: 0 18px;
+}
+
+.slick-next:before { 
+  margin-left: 14px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: rgb(43,39,59);
+  background: radial-gradient(circle, rgba(43,39,59,1) 0%, rgba(34,31,46,1) 100%);;
+}
+
+#__next {
+  height: 100%;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.maxH {
+  height: 100% !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-d-col {
+  flex-direction: column;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.welcome-text {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.progressBar {
+  width: 100%;
+  height: 1rem;
+  background-color: rgb(213, 213, 213);
+  border-radius: 2px;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+.overallParent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+
+    scrollbar-color:#494263 #272335;
+    scrollbar-width: medium;
+}
+
+.overallParent::-webkit-scrollbar {
+  width: 10px;
+  max-height: 10px;
+}
+
+.overallParent::-webkit-scrollbar-track {
+  margin-top: 20px;
+}
+
+.overallParent::-webkit-scrollbar-thumb {
+  background-color: #595273;
+  border-radius: 20px;
+  
+}
+
+.overallParent::-webkit-scrollbar-corner{
+  background-color: #342e49;
+}
+
+.contentParent {
+    height: fit-content;
+}
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
